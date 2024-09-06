@@ -42,11 +42,11 @@
 // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                          &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT      &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&kp F1      &kp F2            &kp F3        &kp F4          &kp F5        &kp F6                                &kp F7          &kp F8            &kp F9          &kp F10         &kp F11            &kp F12
-&trans      &kp LEFT_BRACKET  &kp RBKT      &kp LEFT_BRACE  &trans        &trans                                &trans          &trans            &trans          &kp UP_ARROW    &trans             &kp EQUAL
-&kp LSHFT   &bl BL_OFF        &bl BL_ON     &trans          &trans        &trans        &kp PG_UP    &kp PG_DN  &trans          &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp RSHFT
-                                            &trans          &kp LALT      &trans        &kp SPACE    &kp ENTER  &trans          &kp RALT          &mo 1
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                          &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT      &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp F1      &kp F2            &kp F3          &kp F4          &kp F5        &kp F6                                &kp F7          &kp F8            &kp F9          &kp F10         &kp F11            &kp F12
+&trans      &kp LEFT_BRACKET  &kp RBKT        &kp LEFT_BRACE  &trans        &trans                                &trans          &trans            &trans          &kp UP_ARROW    &trans             &kp EQUAL
+&kp LSHFT   &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &trans          &trans        &trans        &kp PG_UP    &kp PG_DN  &trans          &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp RSHFT
+                                              &trans          &kp LALT      &trans        &kp SPACE    &kp ENTER  &trans          &kp RALT          &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
