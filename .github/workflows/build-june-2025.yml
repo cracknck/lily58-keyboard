@@ -97,6 +97,14 @@ jobs:
         working-directory: ${{ env.base_dir }}
         run: west init -l "${{ env.base_dir }}/${{ inputs.config_path }}"
 
+      - name: Fetch pinned historical Zephyr
+        working-directory: ${{ env.base_dir }}
+        run: |
+          git init zephyr
+          git -C zephyr remote add origin https://github.com/zmkfirmware/zephyr
+          git -C zephyr fetch --filter=tree:0 --depth=1 origin 489d3b00c49d1d3a0d4ec1f693fa0719db38bbf9
+          git -C zephyr checkout --detach FETCH_HEAD
+
       - name: West Update
         working-directory: ${{ env.base_dir }}
         run: west update
