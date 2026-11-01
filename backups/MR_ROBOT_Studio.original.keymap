@@ -1,0 +1,31 @@
+/* MR ROBOT: backed-up keymap, prepared for ZMK Studio import.
+ * Numeric parameters preserve the compiled keycodes and avoid alias conversion.
+ * Source keymap Git blob: e78abb2cce724fed1e1d3eebe8ab66521dad5696
+ * Import this file; it is not firmware and is not copied to NICENANO.
+ */
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        Base {
+            bindings = <
+                &kp 458793  &kp 458782  &kp 458783  &kp 458784  &kp 458785  &kp 458786  &kp 458787  &kp 458788  &kp 458789  &kp 458790  &kp 458791  &kp 458794
+                &kp 458795  &kp 458772  &kp 458778  &kp 458760  &kp 458773  &kp 458775  &kp 458780  &kp 458776  &kp 458764  &kp 458770  &kp 458771  &kp 458800
+                &kp 458809  &kp 458756  &kp 458774  &kp 458759  &kp 458761  &kp 458762  &kp 458763  &kp 458765  &kp 458766  &kp 458767  &kp 458803  &kp 458797
+                &kp 458977  &kp 458781  &kp 458779  &kp 458758  &kp 458777  &kp 458757  &kp 134676486  &kp 134676505  &kp 458769  &kp 458768  &kp 458806  &kp 458807  &kp 458808  &kp 458981
+                &kp 458976  &kp 458978  &kp 458983  &kp 458796  &kp 458792  &kp 458983  &kp 458982  &mo 1
+            >;
+        };
+
+        Lower {
+            bindings = <
+                &bt 0 0  &bt 3 0  &bt 3 1  &bt 3 2  &bt 3 3  &bt 3 4  &kp 786614  &kp 786637  &kp 786613  &kp 786658  &kp 786666  &kp 786665
+                &kp 458810  &kp 458811  &kp 458812  &kp 458813  &kp 458814  &kp 458815  &kp 458816  &kp 458817  &kp 458818  &kp 458819  &kp 458820  &kp 458821
+                &trans  &kp 458799  &kp 458800  &kp 570884143  &trans  &trans  &trans  &trans  &trans  &kp 458834  &trans  &kp 458798
+                &kp 458977  &rgb_ug 2 0  &rgb_ug 1 0  &trans  &trans  &trans  &kp 458827  &kp 458830  &trans  &trans  &kp 458832  &kp 458833  &kp 458831  &kp 458981
+                &trans  &kp 458978  &trans  &kp 458796  &kp 458792  &trans  &kp 458982  &mo 1
+            >;
+        };
+    };
+};
