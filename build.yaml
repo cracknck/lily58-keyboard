@@ -1,12 +1,10 @@
-# Recovery of aaf942d99 (2025-08-11), adapted to current ZMK board naming.
-# The historical configuration used Lily58's standard OLED, not nice!view.
+# Diagnostic only: isolate display work from typing/Bluetooth latency.
 ---
 include:
   - board: nice_nano//zmk
     shield: lily58_left
-    artifact-name: mr_robot_recovery_left
-    cmake-args: -DCONFIG_ZMK_WIDGET_WPM_STATUS=y
+    artifact-name: mr_robot_diagnostic_left
   - board: nice_nano//zmk
     shield: lily58_right
-    artifact-name: mr_robot_recovery_right
+    artifact-name: mr_robot_diagnostic_right
     cmake-args: -DCONFIG_ZMK_USB=n
