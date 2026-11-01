@@ -1,9 +1,6 @@
-# Historical ZMK/Zephyr 3.5 target names; do not use the 2026 board name here.
+# Settings reset only. Install on BOTH halves, then reinstall normal firmware.
 ---
 include:
   - board: nice_nano_v2
-    shield: lily58_left
-    artifact-name: mr_robot_2025_left
-  - board: nice_nano_v2
-    shield: lily58_right
-    artifact-name: mr_robot_2025_right
+    shield: settings_reset
+    artifact-name: mr_robot_settings_reset
