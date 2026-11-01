@@ -5,6 +5,8 @@ include:
   - board: nice_nano//zmk
     shield: lily58_left
     artifact-name: mr_robot_recovery_left
+    cmake-args: -DCONFIG_ZMK_WIDGET_WPM_STATUS=y
   - board: nice_nano//zmk
     shield: lily58_right
     artifact-name: mr_robot_recovery_right
+    cmake-args: -DCONFIG_ZMK_USB=n

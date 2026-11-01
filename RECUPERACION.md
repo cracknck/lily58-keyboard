@@ -7,7 +7,7 @@ Esta rama prepara una prueba de recuperación; no acredita todavía que las pant
 - Referencia: [aaf942d99bf554f0458ccf6d9e21edf413e81512](https://github.com/cracknck/lily58-keyboard/tree/aaf942d99bf554f0458ccf6d9e21edf413e81512), 11 de agosto de 2025.
 - Punto de partida conservado como ancestro: 6b4940db65ccadb177d6f47ec6cdcbac86d299bd. No se reescribe main ni se borra historial.
 - Mapa de teclas restaurado exactamente a la referencia; elimina la desactivación de I2C y la selección forzada de nice_view del 1 de noviembre.
-- Configuración restaurada desde la referencia, con una adaptación: pantalla integrada activada explícitamente. La referencia la desactivaba, pero no incluía implementación de pantalla personalizada; los widgets por sí solos no prueban que existiera una.
+- Configuración restaurada desde la referencia, con adaptaciones para ZMK actual: pantalla integrada activada explícitamente, eliminación de WS2812_STRIP (opción retirada) y widgets de capa/salida elegidos por la pantalla integrada según el rol. WPM se activa solo en la izquierda/central; USB se desactiva explícitamente en la derecha/periférica. La referencia la desactivaba, pero no incluía implementación de pantalla personalizada; los widgets por sí solos no prueban que existiera una.
 - RGB permanece desactivado como en la referencia. No se intenta resolver el RGB derecho en esta recuperación.
 - Placa migrada de nice_nano_v2 a nice_nano//zmk, nombre actual para nice!nano v2. Solo se compilan lily58_left y lily58_right.
 - ZMK y el flujo reutilizable se fijan al commit 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85, para evitar que main cambie el código entre compilaciones. La imagen de compilación stable y acciones transitivas todavía pueden cambiar.
@@ -24,7 +24,7 @@ Fuentes:
 - [Lily58: selección OLED y nodo SSD1306](https://github.com/zmkfirmware/zmk/blob/4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85/app/boards/shields/lily58/lily58.dtsi)
 - [Configuración de pantallas ZMK](https://zmk.dev/docs/config/displays)
 - [Migración de nombres de placa](https://zmk.dev/blog/2025/12/09/zephyr-4-1)
-- [Adaptador nice!view](https://zmk.dev/docs/development/hardware-integration/shields/nice-view-adapter)
+- [Adaptador nice!view](https://github.com/zmkfirmware/zmk/tree/4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85/app/boards/shields/nice_view_adapter)
 
 ## Instalar los dos archivos en macOS
 
