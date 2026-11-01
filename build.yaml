@@ -1,13 +1,12 @@
-
-# MR ROBOT - Lily58 Wireless
-# nice!nano v2 + nice!view
-
+# Recovery of aaf942d99 (2025-08-11), adapted to current ZMK board naming.
+# The historical configuration used Lily58's standard OLED, not nice!view.
 ---
 include:
   - board: nice_nano//zmk
-    shield: nice_view_adapter nice_view lily58_left
-    artifact-name: mr_robot_left
-
+    shield: lily58_left
+    artifact-name: mr_robot_recovery_left
+    cmake-args: -DCONFIG_ZMK_WIDGET_WPM_STATUS=y
   - board: nice_nano//zmk
-    shield: nice_view_adapter nice_view lily58_right
-    artifact-name: mr_robot_right
+    shield: lily58_right
+    artifact-name: mr_robot_recovery_right
+    cmake-args: -DCONFIG_ZMK_USB=n

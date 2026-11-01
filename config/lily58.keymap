@@ -58,21 +58,3 @@
     };
 };
 
-
-
-/* ==================================
- * MR ROBOT - nice!view Display Fix
- * ================================== */
-
-/* Disable conflicting I2C */
-&i2c0 {
-    status = "disabled";
-};
-
-/* Select nice!view instead of OLED */
- / {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
-
