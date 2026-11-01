@@ -1,12 +1,9 @@
-# Recovery of aaf942d99 (2025-08-11), adapted to current ZMK board naming.
-# The historical configuration used Lily58's standard OLED, not nice!view.
+# Historical ZMK/Zephyr 3.5 target names; do not use the 2026 board name here.
 ---
 include:
-  - board: nice_nano//zmk
+  - board: nice_nano_v2
     shield: lily58_left
-    artifact-name: mr_robot_recovery_left
-    cmake-args: -DCONFIG_ZMK_WIDGET_WPM_STATUS=y
-  - board: nice_nano//zmk
+    artifact-name: mr_robot_2025_left
+  - board: nice_nano_v2
     shield: lily58_right
-    artifact-name: mr_robot_recovery_right
-    cmake-args: -DCONFIG_ZMK_USB=n
+    artifact-name: mr_robot_2025_right
