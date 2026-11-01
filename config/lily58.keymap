@@ -58,3 +58,9 @@
     };
 };
 
+
+/* MR ROBOT - nice!view SPI conflict fix */
+
+&i2c0 {
+    status = "disabled";
+};
