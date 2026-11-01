@@ -1,13 +1,13 @@
 
 # MR ROBOT - Lily58 Wireless
-# ZMK Firmware - nice!nano v2
+# nice!nano v2 + nice!view
 
 ---
 include:
   - board: nice_nano//zmk
-    shield: lily58_left
+    shield: nice_view_adapter nice_view lily58_left
     artifact-name: mr_robot_left
 
   - board: nice_nano//zmk
-    shield: lily58_right
+    shield: nice_view_adapter nice_view lily58_right
     artifact-name: mr_robot_right
